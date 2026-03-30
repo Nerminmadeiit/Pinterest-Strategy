@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index-Look Scroll Presentation</title>
+    <meta
+      name="description"
+      content="Single-file scroll presentation with Nermin-style navbar, logo, and theme toggle."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,700&family=Raleway:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="bg-layer" aria-hidden="true"></div>
+
+    <nav
+      class="nav-container"
+      role="navigation"
+      aria-label="Presentation navigation"
+    >
+      <div class="nav-links">
+        <a href="#top" aria-label="Back to top">
+          <img
+            id="mainLogo"
+            src="assets/imgs/1.MARK-1A1A1A.png"
+            alt="logo"
+            class="main-logo"
+          />
+        </a>
+      </div>
+
+      <div class="toggle-container">
+        <button
+          class="toggle-switch"
+          id="themeToggle"
+          type="button"
+          aria-pressed="false"
+          aria-label="Toggle theme"
+        >
+          <div class="toggle-slider">
+            <img
+              src="https://dl.dropboxusercontent.com/scl/fi/cixqaw4sgsza41qz4k1sg/flowerwhote-alone.svg?rlkey=du351kjntwiy4qkrbxwfbhei6&dl=1"
+              alt="theme icon"
+            />
+          </div>
+        </button>
+      </div>
+    </nav>
+
+    <main id="top">
+      <section class="hero reveal">
+        <div class="hero-content">
+          <img
+            class="pinterest-logo"
+            src="assets/imgs/pinterest logo.png"
+            alt=""
+          />
+          <h1>Pinterest Strategy 2026</h1>
+          <p class="hero-p">A Simple System to Create, Position & Grow</p>
+        </div>
+        <p class="kicker-hero">
+          Based on current Pinterest trends <br />by Nermin Digital Studio
+        </p>
+      </section>
+
+      <section class="slide reveal">
+        <article class="panel">
+          <div class="text-container">
+            <h2>Intro</h2>
+            <p>
+              This is not a “perfect strategy.” This is a way to think. A simple
+              system to help you stop posting randomly and start creating
+              content that actually gets found. Pinterest is not about being
+              seen. It’s about being discovered- over time. And this is how you
+              start.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="slide reveal">
+        <article class="panel">
+          <div class="text-container">
+            <h2>What is Pinterest</h2>
+
+            <p>
+              Pinterest is a visual search engine, not social media. People
+              don’t scroll for entertainment. They search with intention.
+              <br />That means your content should be:
+            </p>
+            <ul>
+              <li>searchable</li>
+              <li>clear</li>
+              <li>intentional</li>
+            </ul>
+            <p>
+              Your goal is to create content that answers what people are
+              already looking for.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="slide reveal">
+        <article class="panel">
+          <div class="text-container">
+            <h2>How Pinterest understands your content</h2>
+            <p class="kicker">Click each item to view the visual.</p>
+            <br />
+            <p>Pinterest reads:</p>
+            <ul class="pin-read-list">
+              <li>
+                <button type="button" data-overlay-img="assets/imgs/title.webp">
+                  Your pin title
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  data-overlay-img="assets/imgs/description.webp"
+                >
+                  Your pin description
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  data-overlay-img="assets/imgs/textonimg.webp"
+                >
+                  Text ON your image
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  data-overlay-img="assets/imgs/imgscan.webp"
+                >
+                  The image itself (AI scan)
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  data-overlay-img="assets/imgs/boardname.webp"
+                >
+                  Your board name
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  data-overlay-img="assets/imgs/namebio.webp"
+                >
+                  Your profile (name + bio)
+                </button>
+              </li>
+            </ul>
+            <br />
+            <p>Everything needs to align.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="slide reveal">
+        <article class="panel">
+          <div class="text-container">
+            <h2>Define your Niche</h2>
+
+            <p>
+              Write down your niche clearly. Not “everything you like” But what
+              you want to be known for. <br />
+              Your niche:
+            </p>
+            <ul>
+              <li>What do you create?</li>
+              <li>Who is it for?</li>
+              <li>What do you want to grow into?</li>
+            </ul>
+            <p>Every pin you create should connect back to this.</p>
+            <button
+              type="button"
+              class="my-example-trigger"
+              data-overlay-title="My Example"
+              data-overlay-img="assets/imgs/myexample.webp"
+              data-overlay-list="Feminine UI/UX & Web Design|Fashion & Jewelry Brands|Creative Business / Studio Building"
+            >
+              My Example
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section class="slide reveal">
+        <article class="panel">
+          <div class="text-container">
+            <h2>Keyword Strategy</h2>
+
+            <p>Choose 1 main keyword per pin. <br />Where to use it:</p>
+            <ul>
+              <li>Title</li>
+              <li>Description</li>
+              <li>Text on image</li>
+            </ul>
+            <p>Think about “What would someone search to find this?”</p>
+            <button
+              type="button"
+              class="my-example-trigger"
+              data-overlay-title="My Example"
+              data-overlay-img="assets/imgs/myexample1.webp"
+              data-overlay-p="My main keyword is “design studio,” and I include it in the title, description, and text on  image."
+            >
+              My Example
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section class="slide reveal">
+        <article class="panel">
+          <div class="text-container">
+            <h2>Pin Hook Strategy</h2>
+            <p>This is what makes people click.</p>
+            <p>Write your title like you are speaking to someone.</p>
+            <p>Examples of good hooks:</p>
+            <ul>
+              <li>I thought building my portfolio would be easy...</li>
+              <li>No one tells you this about UI/UX design</li>
+              <li>Why I started my design studio</li>
+            </ul>
+            <p>Make people feel:</p>
+            <ul>
+              <li>curious</li>
+              <li>seen</li>
+              <li>understood</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="slide reveal">
+        <article class="panel">
+          <div class="text-container">
+            <h2>Visual Strategy</h2>
+            <p>
+              Pinterest now understands visuals. In 2026, it is not just about
+              keywords. Pinterest can scan your images using AI.
+            </p>
+            <p>It can recognize:</p>
+            <ul>
+              <li>text on your design</li>
+              <li>objects and elements</li>
+              <li>overall visual style</li>
+            </ul>
+            <p>This means your design itself becomes a signal.</p>
+            <p>Include:</p>
+            <ul>
+              <li>clear text on image (easy to read)</li>
+              <li>strong, intentional typography</li>
+              <li>consistent visual style (your brand)</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="slide reveal">
+        <article class="panel">
+          <div class="text-container">
+            <h2>Pin Strategy</h2>
+            <p>Do not create just one pin.</p>
+            <p>For each blog post or content:</p>
+            <ul>
+              <li>create 3 to 5 pins</li>
+              <li>use different titles</li>
+              <li>same link</li>
+            </ul>
+            <p>Because multiple entry points mean more reach.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="slide reveal">
+        <article class="panel">
+          <div class="text-container">
+            <h2>Pin Formats</h2>
+            <p>Mix your content types:</p>
+            <ul>
+              <li>Static pin (image + text)</li>
+              <li>Carousel (multiple slides)</li>
+              <li>Video pin (short clips)</li>
+            </ul>
+            <p>This keeps your content dynamic and discoverable.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="slide reveal">
+        <article class="panel">
+          <div class="text-container">
+            <h2>Board Structure</h2>
+            <p>Boards help Pinterest understand your content.</p>
+            <p>Create:</p>
+            <ul>
+              <li>One main board (your content first)</li>
+              <li>Supporting boards (your niche topics)</li>
+            </ul>
+            <p>Boards mean organization, not priority.</p>
+            <button
+              type="button"
+              class="my-example-trigger"
+              data-overlay-title="Board Structure Example"
+              data-overlay-img="assets/imgs/boardstructure.webp"
+              data-overlay-list="Main: Nermin Digital Studio|Others: Feminine Web Design|UI/UX Tips|Design Process|Creative Business"
+            >
+              My Example
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section class="slide reveal">
+        <article class="panel">
+          <div class="text-container">
+            <h2>Content Flow</h2>
+            <p>How to use this system:</p>
+            <ul>
+              <li>Create content (blog / idea)</li>
+              <li>Choose 1 keyword</li>
+              <li>Create 3 pins</li>
+              <li>Upload to Pinterest</li>
+              <li>Save to main board</li>
+              <li>Re-save to other boards</li>
+            </ul>
+            <p>Repeat consistently.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="slide reveal">
+        <article class="panel">
+          <div class="text-container">
+            <h2>Consistency</h2>
+            <p>
+              You do not need to post daily. You need to show up consistently.
+            </p>
+            <p>Start with:</p>
+            <ul>
+              <li>2 to 3 pins per week</li>
+            </ul>
+            <p>Pinterest rewards consistency over time.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="slide reveal">
+        <article class="panel">
+          <div class="text-container">
+            <h2>Your Goal</h2>
+            <p>This is not about going viral. It is about:</p>
+            <ul>
+              <li>building something that lasts</li>
+              <li>attracting the right audience</li>
+              <li>growing intentionally</li>
+            </ul>
+            <p>Content that lives longer than a moment.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="slide reveal">
+        <article class="panel">
+          <div class="text-container">
+            <h2>Final Note</h2>
+            <p>
+              You do not need to start perfectly. Just start with intention. Do
+              your research, build a strategy, and stay consistent. Growth will
+              not happen overnight, but showing up will. Take it step by step,
+              study the process, and do not be afraid to fail. That is part of
+              learning. That is part of building.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="slide reveal signature-slide">
+        <article class="panel">
+          <div class="text-container">
+            <div class="signature">
+              <p class="paragraph-24">xoxo,</p>
+              <h2 class="signature-font">Nermin</h2>
+            </div>
+            <p class="kicker">Find me on</p>
+            <div class="social-links" aria-label="Social links">
+              <a
+                class="social-link"
+                href="https://www.instagram.com/nermindigital.studio?igsh=MTM4d250ZmlzeXpqZg%3D%3D&utm_source=qr"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm11 1.5a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 18 5.5zM12 7a5 5 0 1 1-5 5 5 5 0 0 1 5-5zm0 2a3 3 0 1 0 3 3 3 3 0 0 0-3-3z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="social-link"
+                href="https://se.pinterest.com/Nermindigitalstudio/"
+                target="_blank"
+                aria-label="Pinterest"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2a10 10 0 0 0-3.64 19.32c0-.94-.02-2.38.49-3.4l1.53-6.48s-.39-.79-.39-1.95c0-1.82 1.06-3.18 2.38-3.18 1.12 0 1.66.84 1.66 1.85 0 1.13-.72 2.82-1.09 4.38-.31 1.3.66 2.36 1.95 2.36 2.34 0 3.91-3 3.91-6.55 0-2.7-1.82-4.72-5.14-4.72a5.84 5.84 0 0 0-6.08 5.91 3.53 3.53 0 0 0 .8 2.29.58.58 0 0 1 .14.56c-.05.18-.15.63-.2.81-.07.28-.3.38-.56.27-1.57-.64-2.3-2.36-2.3-4.28 0-3.19 2.69-7.02 8-7.02 4.27 0 7.09 3.09 7.09 6.42 0 4.39-2.44 7.67-6.04 7.67-1.21 0-2.35-.65-2.74-1.38l-.74 2.82c-.27 1.03-.8 2.31-1.2 3.09A10 10 0 1 0 12 2z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="social-link"
+                href="https://www.nermindigitalstudio.com/"
+                target="_blank"
+                aria-label="Website"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm6.93 9h-3.08a15.85 15.85 0 0 0-1.16-5A8.05 8.05 0 0 1 18.93 11zM12 4.06A13.73 13.73 0 0 1 13.82 11h-3.64A13.73 13.73 0 0 1 12 4.06zM9.31 6a15.85 15.85 0 0 0-1.16 5H5.07A8.05 8.05 0 0 1 9.31 6zM5.07 13h3.08a15.85 15.85 0 0 0 1.16 5A8.05 8.05 0 0 1 5.07 13zM12 19.94A13.73 13.73 0 0 1 10.18 13h3.64A13.73 13.73 0 0 1 12 19.94zM14.69 18a15.85 15.85 0 0 0 1.16-5h3.08A8.05 8.05 0 0 1 14.69 18z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="social-link"
+                href="https://www.linkedin.com/in/nerminyj/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M6.94 8.5H3.56V20h3.38zM5.25 3A1.94 1.94 0 1 0 7.19 4.94 1.94 1.94 0 0 0 5.25 3zM20.44 12.59c0-3.23-1.72-4.74-4.02-4.74a3.47 3.47 0 0 0-3.12 1.72V8.5H9.94V20h3.38v-6.34c0-1.67.32-3.29 2.39-3.29s2.1 1.94 2.1 3.4V20h3.38z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <div class="image-overlay" id="liImageOverlay" hidden>
+      <div class="image-overlay-backdrop" data-close-overlay="true"></div>
+      <div
+        class="image-overlay-content"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Image preview"
+      >
+        <button
+          type="button"
+          class="image-overlay-close"
+          id="liImageOverlayClose"
+          aria-label="Close image preview"
+        >
+          Close
+        </button>
+
+        <img id="overlayPreviewImage" src="" alt="Preview" />
+        <h3 id="overlayPreviewTitle" class="overlay-preview-title" hidden></h3>
+        <p
+          id="overlayPreviewParagraph"
+          class="overlay-preview-paragraph"
+          hidden
+        ></p>
+        <ul id="overlayPreviewList" class="overlay-preview-list" hidden></ul>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">Scroll Down</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
